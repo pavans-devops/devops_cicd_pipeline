@@ -1,5 +1,21 @@
 # # Jenkins Complete CI/CD Pipeline Demonstration # 
 
+Pre-requisites: 
+- Docker should be installed on Build Server
+
+# check whether docker installed.
+$ yum install -y yum-utils device-mapper-persistent-data lvm2
+
+# add community repo - stable version
+$ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+# Install Docker Community Edition
+$ yum install docker-ce
+
+# Start service
+$ systemctl enable docker
+$ systemctl start docker
+$ systemctl status docker
 
 ----------
 
